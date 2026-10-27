@@ -3,89 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panjab Job Junction - Latest Government Jobs & Admit Cards</title>
-    <link rel="icon" type="image/png" href="https://github.com/panjabjobjunction/panjabjobjunction-site/blob/main/logo.png.png?raw=true">
+    <title>Panjab Job Junction - All India Latest Jobs</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
-        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
-        header { background-color: #004b7a; color: white; text-align: center; padding: 2rem 1rem; }
-        header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
-        nav { background-color: #003355; padding: 0.8rem; text-align: center; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.95rem; }
-        nav a:hover { text-decoration: underline; }
-        .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
-        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .card { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; border-top: 4px solid #004b7a; }
-        .badge { display: inline-block; background: #e3f2fd; color: #004b7a; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 0.85rem; margin-bottom: 1rem; }
-        .card h3 { color: #004b7a; margin-bottom: 0.8rem; font-size: 1.2rem; }
-        .card-info p { margin-bottom: 5px; font-size: 0.95rem; }
-        .btn { display: block; text-align: center; background-color: #28a745; color: white; padding: 10px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 1.5rem; transition: 0.2s; }
-        .btn:hover { background-color: #218838; }
-        footer { background: #111; color: #ccc; text-align: center; padding: 1.5rem; margin-top: 3rem; }
-        .footer-nav { margin-bottom: 1rem; }
-        .footer-nav a { color: #ccc; text-decoration: none; margin: 0 10px; font-size: 0.9rem; }
-        .footer-nav a:hover { color: white; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 8px;
+        }
+        .job-list {
+            list-style: none;
+            padding: 0;
+        }
+        .job-item {
+            border-bottom: 1px solid #ddd;
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .job-item a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .job-item a:hover {
+            color: #d9534f;
+        }
+        .dept-name {
+            background-color: #e9ecef;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #495057;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+        .footer a {
+            color: #003366;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-    <header>
+    <div class="header">
         <h1>Panjab Job Junction</h1>
-        <p>ਸਾਰੀਆਂ ਸਰਕਾਰੀ ਨੌਕਰੀਆਂ ਦੀ ਜਾਣਕਾਰੀ, ਆਫਲਾਈਨ ਫਾਰਮਾਂ ਅਤੇ ਦਾਖਲਾ ਕਾਰਡਾਂ ਲਈ ਤੁਹਾਡਾ ਭਰੋਸੇਯੋਗ ਪੋਰਟਲ</p>
-    </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#">Latest Jobs</a>
-        <a href="#">Admit Cards</a>
-        <a href="#">Results</a>
-        <a href="#">Offline Forms</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-    </nav>
-
-    <div class="container">
-        <div class="cards-grid">
-            <!-- Canara Bank Apprentice Card -->
-            <div class="card">
-                <div>
-                    <span class="badge">Latest Job</span>
-                    <h3>Canara Bank Apprentice Engagement 2026-27</h3>
-                    <div class="card-info">
-                        <p><strong>Department:</strong> Canara Bank</p>
-                        <p><strong>Qualification:</strong> Any Graduate</p>
-                        <p><strong>Status:</strong> Online Apply Started</p>
-                    </div>
-                </div>
-                <a href="canara-bank-apprentice.html" class="btn">View Details & Apply</a>
-            </div>
-
-            <!-- Railway RRB Paramedical Staff Card -->
-            <div class="card">
-                <div>
-                    <span class="badge">Latest Job</span>
-                    <h3>Railway RRB Paramedical Staff Recruitment 2026</h3>
-                    <div class="card-info">
-                        <p><strong>Department:</strong> Ministry of Railways (RRB)</p>
-                        <p><strong>Total Vacancies:</strong> 590 Posts[cite: 8]</p>
-                        <p><strong>Status:</strong> Online Apply Started</p>
-                    </div>
-                </div>
-                <a href="rrb-paramedical-2026.html" class="btn">View Details & Apply</a>
-            </div>
-        </div>
+        <p>Latest All India & Punjab Government Jobs Updates</p>
     </div>
 
-    <footer>
-        <div class="footer-nav">
-            <a href="index.html">Home</a> | 
-            <a href="#">About Us</a> | 
-            <a href="#">Contact Us</a> | 
-            <a href="#">Privacy Policy</a> | 
-            <a href="#">Disclaimer</a>
+    <div class="container">
+        <h2>🔥 All India Latest Recruitment 2026</h2>
+        <ul class="job-list">
+            
+            <!-- Job 1 -->
+            <li class="job-item">
+                <a href="rrb-ntpc-recruitment-2026.html">Railway NTPC Various Posts Recruitment 2026</a>
+                <span class="dept-name">Railway Recruitment Board (RRB)</span>
+            </li>
+
+            <!-- Job 2 -->
+            <li class="job-item">
+                <a href="ssc-cgl-recruitment-2026.html">SSC CGL Online Form 2026</a>
+                <span class="dept-name">Staff Selection Commission (SSC)</span>
+            </li>
+
+            <!-- Job 3 -->
+            <li class="job-item">
+                <a href="india-post-gds-2026.html">Gramin Dak Sevak (GDS) Bharti 2026</a>
+                <span class="dept-name">India Post Department</span>
+            </li>
+
+            <!-- Job 4 -->
+            <li class="job-item">
+                <a href="ibps-bank-po-2026.html">Bank PO & Clerk 5000+ Posts</a>
+                <span class="dept-name">IBPS</span>
+            </li>
+
+        </ul>
+
+        <!-- AdSense ਲਈ ਜ਼ਰੂਰੀ ਫੁੱਟਰ ਲਿੰਕ -->
+        <div class="footer">
+            <p>&copy; 2026 Panjab Job Junction. All Rights Reserved.</p>
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact Us</a> | 
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms & Conditions</a>
         </div>
-        <p>&copy; 2026 Panjab Job Junction. All Rights Reserved.</p>
-    </footer>
+    </div>
 
 </body>
 </html>
