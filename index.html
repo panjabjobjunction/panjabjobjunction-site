@@ -16,14 +16,15 @@
         
         .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
         
+        /* 4 Columns Side-by-Side (2 Rows of 4 Boxes = 8 Posts) */
         .cards-grid { 
             display: grid; 
-            grid-template-columns: repeat(3, 1fr); 
+            grid-template-columns: repeat(4, 1fr); 
             gap: 15px; 
             margin-bottom: 2.5rem;
         }
         
-        @media (max-width: 900px) {
+        @media (max-width: 1024px) {
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 600px) {
@@ -195,10 +196,10 @@
 
     <div class="container">
         
-        <!-- Top 8 Post Boxes Grid Section -->
+        <!-- Top 8 Post Boxes Grid Section (4 Columns x 2 Rows) -->
         <div class="cards-grid">
 
-            <!-- 1. UCO Bank Apprentice Recruitment 2026-27 Card -->
+            <!-- Row 1: Box 1 -->
             <div class="card-item theme-teal">
                 <div class="card-header">
                     <span>Bank Apprentice</span>
@@ -210,7 +211,7 @@
                 </div>
             </div>
 
-            <!-- 2. Panjab University Constituent College Security Guard Recruitment 2026 Card -->
+            <!-- Row 1: Box 2 -->
             <div class="card-item theme-teal">
                 <div class="card-header">
                     <span>Offline Form</span>
@@ -222,7 +223,7 @@
                 </div>
             </div>
 
-            <!-- 3. RRB Station Master Recruitment 2026 Card -->
+            <!-- Row 1: Box 3 -->
             <div class="card-item theme-teal">
                 <div class="card-header">
                     <span>CEN 08/2026</span>
@@ -234,7 +235,7 @@
                 </div>
             </div>
 
-            <!-- 4. NWR RRC Jaipur Apprentice Recruitment 2026 -->
+            <!-- Row 1: Box 4 -->
             <div class="card-item theme-teal">
                 <div class="card-header">
                     <span>Railway Recruitment</span>
@@ -246,7 +247,7 @@
                 </div>
             </div>
 
-            <!-- 5. Haryana Police Telecommunication Wing SPOs Recruitment 2026 -->
+            <!-- Row 2: Box 5 -->
             <div class="card-item theme-brown">
                 <div class="card-header">
                     <span>Haryana Police</span>
@@ -258,7 +259,7 @@
                 </div>
             </div>
 
-            <!-- 6. District & Sessions Judge Faridkot Recruitment 2026 -->
+            <!-- Row 2: Box 6 -->
             <div class="card-item theme-blue">
                 <div class="card-header">
                     <span>District Courts</span>
@@ -270,7 +271,7 @@
                 </div>
             </div>
 
-            <!-- 7. RRB NTPC Graduate Recruitment 2026 -->
+            <!-- Row 2: Box 7 -->
             <div class="card-item theme-olive">
                 <div class="card-header">
                     <span>CEN 06/2026</span>
@@ -282,7 +283,7 @@
                 </div>
             </div>
 
-            <!-- 8. Naval Dockyard Karwar & Naval Aircraft Yard Goa Apprenticeship -->
+            <!-- Row 2: Box 8 -->
             <div class="card-item theme-magenta">
                 <div class="card-header">
                     <span>Apprenticeship</span>
@@ -296,7 +297,7 @@
 
         </div>
 
-        <!-- 2-Column Split Layout: Latest Online Form vs Offline Form (Alag-alag show karne ke liye) -->
+        <!-- 2-Column Split Layout: Latest Online Form vs Offline Form -->
         <div class="main-columns-grid">
             
             <!-- Column 1: Latest Online Form -->
