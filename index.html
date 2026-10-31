@@ -14,105 +14,14 @@
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.95rem; }
         nav a:hover { text-decoration: underline; }
         
-        .container { max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; }
-
-        /* Top Announcement Bars (Matching Screenshot) */
-        .top-banner-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 8px;
-            margin-bottom: 15px;
-        }
-        @media (max-width: 768px) {
-            .top-banner-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        .banner-box {
-            background-color: #c00000;
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 0.9rem;
-            text-align: center;
-            padding: 8px 5px;
-            border-radius: 2px;
-            text-decoration: none;
-            display: block;
-            border: 1px solid #900000;
-        }
-        .banner-box.blue-bg { background-color: #0070f3; border-color: #0056b3; }
-        .banner-box.green-bg { background-color: #008000; border-color: #006000; }
-        .banner-box a { color: #ffffff; text-decoration: underline; }
-
-        .notice-ticker {
-            background: #ffffff;
-            border: 1px solid #dcdcdc;
-            padding: 8px 12px;
-            margin-bottom: 15px;
-            text-align: center;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-        .notice-ticker .red-text { color: #c00000; }
-        .notice-ticker .whatsapp-btn {
-            background-color: #25d366;
-            color: #ffffff;
-            padding: 3px 8px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 0.85rem;
-            margin: 0 4px;
-            display: inline-block;
-        }
-
-        /* 2-Column Split Layout (Matching Screenshot) */
-        .main-columns-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        @media (max-width: 768px) {
-            .main-columns-grid { grid-template-columns: 1fr; }
-        }
-
-        .column-box {
-            background: #ffffff;
-            border: 1px solid #b71c1c;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        .column-header {
-            background-color: #b71c1c;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-            font-size: 1.1rem;
-            font-weight: bold;
-        }
-        .column-list {
-            list-style: none;
-            padding: 10px 15px;
-        }
-        .column-list li {
-            padding: 8px 0;
-            border-bottom: 1px dashed #e0e0e0;
-            font-size: 0.9rem;
-        }
-        .column-list li:last-child { border-bottom: none; }
-        .column-list a {
-            color: #0000ed;
-            font-weight: bold;
-            text-decoration: underline;
-        }
-        .column-list a:hover { color: #b71c1c; }
-        .date-highlight { color: #c00000; font-weight: bold; }
-
-        /* General Grid for Original Cards (Compact & Clean) */
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        
         .cards-grid { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
             gap: 15px; 
-            margin-top: 25px;
         }
+        
         @media (max-width: 900px) {
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
         }
@@ -122,9 +31,9 @@
 
         .card-item {
             background: #ffffff;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
             display: flex;
             flex-direction: column;
             border: 2px solid transparent;
@@ -187,7 +96,7 @@
             text-decoration: none;
         }
 
-        /* Color Themes Matching */
+        /* Color Themes Matching Screenshot */
         .theme-teal { border-color: #00b4a2; }
         .theme-teal .card-header { background-color: #00b4a2; }
         .theme-teal .card-arrow { background-color: #e6f8f6; color: #00b4a2; }
@@ -218,6 +127,7 @@
 
         footer { background: #111; color: #ccc; text-align: center; padding: 1.5rem; margin-top: 3rem; }
         .footer-nav { margin-bottom: 1rem; }
+        .footer-nav class { color: #ccc; }
         .footer-nav a { color: #ccc; text-decoration: none; margin: 0 10px; font-size: 0.9rem; }
         .footer-nav a:hover { color: white; }
     </style>
@@ -240,75 +150,6 @@
     </nav>
 
     <div class="container">
-
-        <!-- Top Announcement Grid (Matching Screenshot) -->
-        <div class="top-banner-grid">
-            <div class="banner-box">
-                <a href="#">CWC Jr Executive, Asst. Manager Online Form</a><br>
-                <a href="pb-court-clerk-2026.html">SSSC Punjab 1270 Clerk Online Form 2026</a>
-            </div>
-            <div class="banner-box blue-bg">
-                <a href="#">NTA UGC NET December 2026 Online Form</a><br>
-                <a href="#">NTA JEE Main 2027 Online Form (Session-I)</a>
-            </div>
-            <div class="banner-box green-bg">
-                <a href="pb-deled-admission-2025.html">Punjab ETT SCERT D.El.Ed Entrance Online Form</a><br>
-                <a href="rrb-ntpc-graduate-2026.html">RRB CEN 06/2026 NTPC (Graduate) Online Form</a>
-            </div>
-            <div class="banner-box blue-bg">
-                <a href="#">NTA CSIR-UGC NET December 2026 Online Form</a><br>
-                <a href="rrb-ntpc-ug-2026.html">RRB 1688 NTPC (12th Level) Posts Online Form</a>
-            </div>
-        </div>
-
-        <!-- Ticker Notice (Matching Screenshot) -->
-        <div class="notice-ticker">
-            <span class="red-text">ਪੰਜਾਬ 'ਚ ਹਰ ਆਉਂਦੇ ਹੋਏ ਹਫ਼ਤੇ ਦੀ ਹਰ ਤਰ੍ਹਾਂ ਦੇ ਫੀਲਡਾਂ/ਖੇਤਰਾਂ ਦੀਆਂ ਭਰਤੀਆਂ/ਪੋਸਟਾਂ ਦੀ ਜਾਣਕਾਰੀ ਲਈ ਤੁਸੀਂ ਸਾਡੇ ਨਾਲ ਜੁੜੇ ਰਹੋ ਦੋਸਤੋ ਸਾਡੇ ਨਾਲ ਜੁੜੇ ਰਹਿਣ ਲਈ ਆਪ ਸਭ ਦਾ ਬਹੁਤ ਧੰਨਵਾਦ ਜੀ</span><br>
-            <span>Be careful from similar website. Thank You | PUNJAB JOB ALERT ਦੇ ਨਾਮ ਨਾਲ ਮਿਲਦੀ ਜੁਲਦੀ ਫਰਜ਼ੀ ਵੈੱਬਸਾਈਟ ਤੋਂ ਬਚੋ | ਇਸ ਲਈ ਹਮੇਸ਼ਾ ਗੂਗਲ ਵਿੱਚ ਪੂਰਾ ਸਰਚ ਕਰੋ PU</span><br>
-            <span style="color: #ff9800; font-weight: bold;">NEW</span> For New Updates 
-            <a href="https://wa.me/919815855231" class="whatsapp-btn">💬 Follow WhatsApp Channel Click Here</a>
-            <span style="color: #ff9800; font-weight: bold;">NEW</span>
-        </div>
-
-        <!-- 2-Column Split Layout (Latest Online Form vs Latest Update) -->
-        <div class="main-columns-grid">
-            <div class="column-box">
-                <div class="column-header">Latest Online Form</div>
-                <ul class="column-list">
-                    <li>• <a href="uco-bank-apprentice-2026.html">UCO Bank Apprentice Engagement 2026-27</a> <span class="date-highlight">(Last Date : 29/10/2026)</span></li>
-                    <li>• <a href="pucc-nihal-singh-wala-security-guard-2026.html">PU Constituent College Security Guard Recruitment</a> <span class="date-highlight">(Last Date : 04/11/2026)</span></li>
-                    <li>• <a href="rrb-station-master-2026.html">RRB Station Master Recruitment 2026 (CEN 08/2026)</a> <span class="date-highlight">(Last Date : 25/11/2026)</span></li>
-                    <li>• <a href="nwr-rrc-apprentice-2026.html">NWR RRC Jaipur Apprentice Recruitment 2026</a></li>
-                    <li>• <a href="haryana-police-spos-2026.html">Haryana Police Telecommunication Wing SPOs Recruitment</a></li>
-                    <li>• <a href="faridkot-court-recruitment-2026.html">District & Sessions Judge Faridkot Recruitment 2026</a></li>
-                    <li>• <a href="rrb-ntpc-graduate-2026.html">RRB NTPC Graduate Recruitment 2026</a></li>
-                    <li>• <a href="naval-dockyard-apprenticeship-2027.html">Naval Dockyard Karwar & Goa Apprenticeship</a></li>
-                    <li>• <a href="crpf-sports-quota-2026.html">CRPF Sports Quota Recruitment 2026</a></li>
-                    <li>• <a href="csir-ncl-mts-2026.html">CSIR-NCL Multi-Tasking Staff (MTS) Recruitment</a></li>
-                    <li>• <a href="sc-junior-court-attendant-2026.html">Supreme Court Junior Court Attendant Recruitment</a></li>
-                    <li>• <a href="dsssb-courts-2026.html">DSSSB Sweeper & Chowkidar Recruitment 2026</a></li>
-                    <li>• <a href="rrb-ntpc-ug-2026.html">RRB NTPC Under Graduate Recruitment 2026</a></li>
-                    <li>• <a href="pb-deled-admission-2025.html">Punjab D.El.Ed. Admission Policy 2025-27</a></li>
-                    <li>• <a href="pb-court-clerk-2026.html">Punjab & Haryana High Court Clerk Recruitment 2026</a></li>
-                </ul>
-            </div>
-
-            <div class="column-box">
-                <div class="column-header">Latest Update</div>
-                <ul class="column-list">
-                    <li>• <a href="gds-merit-list-2026.html">India Post GDS 23757 Posts 1st Merit List 2026</a></li>
-                    <li>• <a href="canara-bank-apprentice.html">Canara Bank Apprentice Engagement 2026-27</a></li>
-                    <li>• <a href="rrb-paramedical-2026.html">Railway RRB Paramedical Staff Recruitment 2026</a></li>
-                    <li>• <a href="#">RRB NTPC 07/2025 NTPC (UG) 3058 Posts Exam Result</a></li>
-                    <li>• <a href="#">Delhi High Court 150 PA, Sr. PA Typing Test Date</a></li>
-                    <li>• <a href="#">SSC Jr Engineer Revised Paper-I Admit Card 2026</a></li>
-                    <li>• <a href="#">AEES 254 PRT, TGT, PGT, Librarian Online Form</a></li>
-                    <li>• <a href="#">DGMA Mumbai 30 MSA Vacancy Online Form</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Cards Grid Section -->
         <div class="cards-grid">
 
             <!-- UCO Bank Apprentice Recruitment 2026-27 Card -->
@@ -398,3 +239,146 @@
             <!-- 5. Naval Dockyard Karwar & Naval Aircraft Yard Goa Apprenticeship -->
             <div class="card-item theme-magenta">
                 <div class="card-header">
+                    <span>Apprenticeship</span>
+                    <a href="naval-dockyard-apprenticeship-2027.html" class="card-btn">APPLY</a>
+                </div>
+                <div class="card-body">
+                    <a href="naval-dockyard-apprenticeship-2027.html" class="card-title">Naval Dockyard Karwar & Naval Aircraft Yard Goa Apprenticeship 2027-29</a>
+                    <a href="naval-dockyard-apprenticeship-2027.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+            <!-- 6. CRPF Sports Quota Recruitment 2026 -->
+            <div class="card-item theme-orange">
+                <div class="card-header">
+                    <span>Defence Job</span>
+                    <a href="crpf-sports-quota-2026.html" class="card-btn">APPLY</a>
+                </div>
+                <div class="card-body">
+                    <a href="crpf-sports-quota-2026.html" class="card-title">CRPF Sports Quota Recruitment 2026 (Head Constable & Constable)</a>
+                    <a href="crpf-sports-quota-2026.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+            <!-- 7. CSIR-NCL Multi-Tasking Staff Recruitment 2026 -->
+            <div class="card-item theme-lightblue">
+                <div class="card-header">
+                    <span>CSIR Job</span>
+                    <a href="csir-ncl-mts-2026.html" class="card-btn">APPLY</a>
+                </div>
+                <div class="card-body">
+                    <a href="csir-ncl-mts-2026.html" class="card-title">CSIR-NCL Multi-Tasking Staff (MTS) Recruitment 2026</a>
+                    <a href="csir-ncl-mts-2026.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+            <!-- 8. Supreme Court Junior Court Attendant Recruitment 2026 -->
+            <div class="card-item theme-teal">
+                <div class="card-header">
+                    <span>Supreme Court</span>
+                    <a href="sc-junior-court-attendant-2026.html" class="card-btn">APPLY</a>
+                </div>
+                <div class="card-body">
+                    <a href="sc-junior-court-attendant-2026.html" class="card-title">Supreme Court Junior Court Attendant Recruitment 2026</a>
+                    <a href="sc-junior-court-attendant-2026.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+            <!-- 9. DSSSB Sweeper & Chowkidar Recruitment 2026 -->
+            <div class="card-item theme-brown">
+                <div class="card-header">
+                    <span>Recruitment</span>
+                    <a href="dsssb-courts-2026.html" class="card-btn">APPLY</a>
+                </div>
+                <div class="card-body">
+                    <a href="dsssb-courts-2026.html" class="card-title">DSSSB Sweeper & Chowkidar Recruitment 2026 (Advt. No. 05/2026)</a>
+                    <a href="dsssb-courts-2026.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+            <!-- 10. RRB NTPC Under Graduate Recruitment 2026 -->
+            <div class="card-item theme-blue">
+                <div class="card-header">
+                    <span>Central Job</span>
+                    <a href="rrb-ntpc-ug-2026.html" class="card-btn">APPLY</a>
+                </div>
+                <div class="card-body">
+                    <a href="rrb-ntpc-ug-2026.html" class="card-title">RRB NTPC Under Graduate Recruitment 2026 (CEN 07/2026)</a>
+                    <a href="rrb-ntpc-ug-2026.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+            <!-- 11. Punjab D.El.Ed. Admission Policy 2025-27 -->
+            <div class="card-item theme-olive">
+                <div class="card-header">
+                    <span>Admission</span>
+                    <a href="pb-deled-admission-2025.html" class="card-btn">VIEW</a>
+                </div>
+                <div class="card-body">
+                    <a href="pb-deled-admission-2025.html" class="card-title">Punjab D.El.Ed. Admission Policy 2025-27 (SCERT)</a>
+                    <a href="pb-deled-admission-2025.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+            <!-- 12. Punjab & Haryana High Court Clerk Recruitment 2026 -->
+            <div class="card-item theme-magenta">
+                <div class="card-header">
+                    <span>High Court</span>
+                    <a href="pb-court-clerk-2026.html" class="card-btn">APPLY</a>
+                </div>
+                <div class="card-body">
+                    <a href="pb-court-clerk-2026.html" class="card-title">Punjab & Haryana High Court Clerk Recruitment 2026</a>
+                    <a href="pb-court-clerk-2026.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+            <!-- 13. India Post GDS 23757 Posts 1st Merit List 2026 -->
+            <div class="card-item theme-teal">
+                <div class="card-header">
+                    <span>Result / Merit</span>
+                    <a href="gds-merit-list-2026.html" class="card-btn">VIEW</a>
+                </div>
+                <div class="card-body">
+                    <a href="gds-merit-list-2026.html" class="card-title">India Post GDS 23757 Posts 1st Merit List 2026</a>
+                    <a href="gds-merit-list-2026.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+            <!-- 14. Canara Bank Apprentice Engagement 2026-27 -->
+            <div class="card-item theme-blue">
+                <div class="card-header">
+                    <span>Bank Job</span>
+                    <a href="canara-bank-apprentice.html" class="card-btn">APPLY</a>
+                </div>
+                <div class="card-body">
+                    <a href="canara-bank-apprentice.html" class="card-title">Canara Bank Apprentice Engagement 2026-27</a>
+                    <a href="canara-bank-apprentice.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+            <!-- 15. Railway RRB Paramedical Staff Recruitment 2026 -->
+            <div class="card-item theme-orange">
+                <div class="card-header">
+                    <span>Railway Job</span>
+                    <a href="rrb-paramedical-2026.html" class="card-btn">APPLY</a>
+                </div>
+                <div class="card-body">
+                    <a href="rrb-paramedical-2026.html" class="card-title">Railway RRB Paramedical Staff Recruitment 2026</a>
+                    <a href="rrb-paramedical-2026.html" class="card-arrow">›</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <p>&copy; 2026 Panjab Job Junction. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
